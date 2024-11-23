@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registro</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
 </head>
 <body>
 {% load crispy_forms_tags %}
@@ -21,7 +23,7 @@
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                Já tem uma conta? <a class="ml-2" href="#">Entrar</a>
+                Já tem uma conta? <a class="ml-2" href="{% url 'login' %}">Entrar</a>
             </small>
         </div>
     </div>
