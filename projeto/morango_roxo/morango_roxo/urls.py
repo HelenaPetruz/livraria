@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', include('livraria.urls')),
     path('admin/', admin.site.urls),
-    path('login/', auth_views.LoginView.as_view(template_name = 'user/login.html'), name = 'login'),
-    path('profile/', user_views.profile, name = 'profile'),
-    path('register/', user_views.register, name = 'registro')
+    path('registrar/', user_views.register, name='register'),
+    path('login/', user_views.login, name='login'),
+
 ]

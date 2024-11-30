@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'livraria',
-    'user',
     'crispy_bulma',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +131,5 @@ LOGIN_URL = 'login'
 CRISPY_ALLOWED_TEMPLATE_PACKS = ("bulma",)
 
 CRISPY_TEMPLATE_PACK = "bulma"
+
+AUTH_USER_MODEL = 'user.User'
